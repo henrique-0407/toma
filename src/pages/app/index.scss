@@ -1,0 +1,84 @@
+.pagina-inicial{
+ 
+  
+  header {
+    display: flex;
+   
+    height: 90px;
+    background-color: #6278F7;
+
+    justify-content: space-between;
+    padding: 0px 60px 40px 60px;
+    padding-top: 20px;
+     
+
+
+    .imagek{
+      display: flex;
+      flex-direction: row; 
+      align-items: center;
+      padding-top: 20px;
+      gap: 30px;
+
+      h2{
+        color: white;
+        font-family: arial;
+      }
+      
+
+      img{
+        width: 51.52px;
+        height: 60px;
+        top: 15px;
+        left: 80px;
+        gap: 0px;
+        opacity: 0px;
+
+      }
+    }
+    .lincados{
+      padding-top: 10px;
+      nav{
+        display: flex;
+        gap: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+  
+  
+        .brabo{
+          color: white;
+          text-decoration: none;
+          font-size: 20px;
+          font: 100;
+        }
+      }
+  
+    }
+  }
+  }
+
+  .conteudo{
+    display: flex;
+    flex-direction: column;
+
+
+    .blocos{
+
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      .q1{
+        
+      }
+      .q2{
+  
+      }
+      .q3{
+  
+      }
+    }
+   
+  }
+
+ 
+
+
