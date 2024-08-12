@@ -1,12 +1,13 @@
 
 import './index.scss';
 import { Link } from 'react-router-dom';
+
 export default function App() {
   return (
     <div className="pagina-inicial">
       <header>
         <div className='imagek'>
-          <img src="/assets/img/image1.png" alt="" />
+          <img src="/assets/img/frei.png" alt="" />
           <h2>React FreiS</h2>
         </div>
         <div className='lincados'>
@@ -22,28 +23,32 @@ export default function App() {
           Escolha um treino...
         </h1>
         <div className='blocos'>
-        <div class="q1">
+        <Link className='brabo' to="/ex1">
+          <div className="q1">
+          <img src="/assets/img/amarelo.png" alt="" />
           <h2>
             Cumpom de desconto
           </h2>
           <p>Exercício 01</p>
-          <img src="/public/assets/img/verde.png" alt="" />
+          
         </div>
-
-        <div class="q2">
+        </Link>
+        <div className="q2">
+          <img src="/assets/img/verde.png" alt="" />
           <h2>
             Converter Kg/gramas
           </h2>
           <p>Exercício 02</p>
-          <img src="/public/assets/img/amarelo.png" alt="" />
+          
         </div>
         
-        <div class="q3">
+        <div className="q3">
+          <img src="/assets/img/azul.png" alt="" />
           <h2>
             valor total por quantidade
           </h2>
           <p>Exercício 03</p>
-          <img src="/public/assets/img/azul.png" alt="" />
+          
         </div>
         </div>
         
