@@ -1,4 +1,5 @@
 .ex1{
+  background-color: #f1f1f1;
     header {
         display: flex;
         height: 90px;
@@ -48,23 +49,47 @@
         
           }
 }
-
+  .cabeca1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    margin-bottom: 5%;
     .cabeca{
-        display: flex;
-        flex-direction: row;
-        padding: 40px;
+      display: flex;
+      flex-direction: row;
+      padding: 5% 0px 0px 5%;
+      gap: 15px;
+      align-items: center;
+      h1{
+        font-family: arial;
+      }
 
-
+  }
+  .linha{
+      background-color:#FFCE37;
+      padding: 1px;
+      width: 130vh;
+      margin-left: 5vh ;
     }
-    .linha{
-        text-align: center;
-        background-color:#FFCE37;
-        width: 1200px;
-        height: 2px;
-        padding-top:2px;
-        border-radius: 12px 0px 0px 0px;
-        padding-left: -40px;
-        
-
+    .emci{
+      width: 95%;
+      padding: 10%;
+      margin-left: 2.5%;
+      text-align: center;
+      background-color: white;
+      
     }
+  }
+   .textoex{
+    width: 60%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+    
+   }
 }
