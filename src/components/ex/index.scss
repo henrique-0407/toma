@@ -1,0 +1,32 @@
+.cabeca1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    margin-bottom: 30px;
+    .cabeca{
+      display: flex;
+      flex-direction: row;
+      padding: 5% 0px 0px 5%;
+      gap: 15px;
+      align-items: center;
+      h1{
+        font-family: arial;
+      }
+
+  }
+  .linha{
+      background-color:#FFCE37;
+      padding: 1px;
+      width: 130vh;
+      margin-left: 5vh ;
+    }
+    .emci{
+      width: 95%;
+      padding: 10%;
+      margin-left: 2.5%;
+      text-align: center;
+      background-color: white;
+      
+    }
+  }
