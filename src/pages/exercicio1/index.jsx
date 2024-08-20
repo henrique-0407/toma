@@ -19,6 +19,7 @@ export default function Exum() {
         <div className='ex1'>
             <Leito/>
             <Exe 
+            cor
             titulo="Exercício 01 - Cupom de desconto" 
             texto="Implementar um programa em Javascript para calcular o valor final de uma compra a partir do valor da compra e do cupom de desconto. O cupom diz quantos reais terá de desconto."/>
             <div className='textoex'> 
@@ -28,8 +29,6 @@ export default function Exum() {
                     <h2>Informe o valor do cupom</h2>
                     <input placeholder='0' type="text" onChange={e => setDesc(e.target.value)} />
                     <button onClick={calculo}>Executar</button>
-
-                    
                 </div>
                 <li>{'Resultado: o resultado é ' + resul}</li>
             </div>

@@ -1,6 +1,10 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
-export default function Exe(props){
+export default function Exe(props,{cordaLinha}){
+
+    const Linha = {
+        backgroundColor:cordaLinha || "#000"
+    }
     return(
         <div className='cabeca1'>
                 <div className='cabeca'>
@@ -9,7 +13,7 @@ export default function Exe(props){
                     </Link>
                     <h1>{props.titulo}</h1>
                 </div>
-                <div className='linha'></div>
+                <div style={Linha}className='linha'></div>
                 <div className='emci'>
                     <p>
                         {props.texto}
