@@ -19,7 +19,7 @@ export default function Exum() {
         <div className='ex1'>
             <Leito/>
             <Exe 
-            cor
+            cor="#FFCE37"
             titulo="Exercício 01 - Cupom de desconto" 
             texto="Implementar um programa em Javascript para calcular o valor final de uma compra a partir do valor da compra e do cupom de desconto. O cupom diz quantos reais terá de desconto."/>
             <div className='textoex'> 

@@ -16,7 +16,7 @@ export default function Exum2(){
         <div className='ex2'>
             <Leito/>
             <Exe
-            cordaLinha="#f1f1f1"
+            cor="#B3FF37"
             titulo="Exercício 02 - Converter Kg/gramas" 
             texto="Implementar um programa em Javascript para converter kilos em gramas."
             />

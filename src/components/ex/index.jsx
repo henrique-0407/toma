@@ -1,9 +1,9 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
-export default function Exe(props,{cordaLinha}){
+export default function Exe(props){
 
-    const Linha = {
-        backgroundColor:cordaLinha || "#000"
+    let Linha = {
+        backgroundColor:props.cor || "#000"
     }
     return(
         <div className='cabeca1'>
