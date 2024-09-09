@@ -44,9 +44,9 @@ export default function App() {
     },
     {
       link:"/ex11",
-      titulo:"Valor total por quantidade",
-      texto:"Exercicio 3",
-      cor: "/assets/img/ciano.png"
+      titulo:"Tabuada",
+      texto:"Exercicio 11",
+      cor: "/assets/img/azules.png"
     }
 ]
   return (
