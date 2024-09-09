@@ -7,15 +7,16 @@ export default function Exum10() {
 
     const [peso, setPeso] = useState(0);
     const [altura, setAltura] = useState(0);
-    const [imc, setImc] = useState("");
     const [lista, setLista] = useState([]);
+    let situacao = "invalido";
 
-    function calculoss() {
+
+        
+        function calculoss() {
         let alturaNumerica = Number(altura);
         let pesoNumerico = Number(peso);
         let imcr = pesoNumerico / (alturaNumerica * alturaNumerica);
-        let situacao = "";
-
+        
         if (imcr <= 16.9) {
             situacao = "Muito abaixo do peso";
         } else if (imcr >= 17 && imcr <= 18.4) {
@@ -31,21 +32,25 @@ export default function Exum10() {
         } else if (imcr >= 40) {
             situacao = "Obesidade grau III";
         }
+        
 
-        setImc(situacao);
+        
+    
 
         let info = {
             altura: altura,
             peso: peso,
-            situaçao: imc
+            situacao: situacao,
         }
+
 
         setLista([...lista, info]);
     }
-    function excluirItem(pos) {
-        lista.splice(pos, 1);
-        setLista([...lista]);
-      }
+        function excluir(pos) {
+            lista.splice(pos, 1);
+            setLista([...lista]);
+        }
+        
     return (
         <div className='ex10'>
             <div className='toma10'>
@@ -82,10 +87,13 @@ export default function Exum10() {
                     <div className='list'>
                         {lista.map((item, pos) => (
                             <div className='lista' key={pos}>
-                                <div>
-                                Altura: {item.altura} | Peso: {item.peso} | IMC: {item.imc}
-                                <i onClick={() =>{excluirItem(pos)}} class="fa-solid fa-trash"></i>
+                                <div className='listaa'>
+                                <p>Altura: {item.altura} | Peso: {item.peso} | IMC: {item.situacao}</p>
                                 </div>
+                                <div className='icone'>
+                                <i onClick={() =>{excluir(pos)}} class="fa-solid fa-trash"></i>
+                                </div>
+                                
                                 
                             </div>
                         ))}

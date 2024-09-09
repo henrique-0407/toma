@@ -13,6 +13,7 @@
                 background-color: white;
                 border-radius: 10px;
                 gap: 10px;
+                margin-bottom: 50px;
                 button{
                     border: 0px;
                     border-radius: 5px;
@@ -56,11 +57,26 @@
                 .lista{
                     display: flex;
                     flex-direction: row;
-                    background-color: white;
-                    padding: 10px 30px;
-                    border-radius: 10px;
-                    margin: 5px 50px;
+                    align-items:center ;
+              
+                    .listaa{
+                        background-color: white;
+                        padding: 10px 30px;
+                        border-radius: 10px;
+                        margin: 5px 10px;
+                    }
+                    .icone{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 18px;
+                        background-color: #6278F7;
+                        border-radius: 10px;
+                        width: 30px;
+                        height: 30px;
+                    }
                 }
+                
             }
         }
     }
