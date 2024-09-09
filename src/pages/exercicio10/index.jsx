@@ -11,14 +11,8 @@ export default function Exum10() {
     const [lista, setLista] = useState([]);
 
     function calculoss() {
-        const alturaNumerica = parseFloat(altura);
-        const pesoNumerico = parseFloat(peso);
-
-        if (isNaN(alturaNumerica) || isNaN(pesoNumerico) || alturaNumerica === 0) {
-            alert("Por favor, insira valores válidos para altura e peso.");
-            return;
-        }
-
+        let alturaNumerica = Number(altura);
+        let pesoNumerico = Number(peso);
         let imcr = pesoNumerico / (alturaNumerica * alturaNumerica);
         let situacao = "";
 
@@ -40,13 +34,18 @@ export default function Exum10() {
 
         setImc(situacao);
 
-        setLista([...lista, { altura, peso, imc: situacao }]);
+        let info = {
+            altura: altura,
+            peso: peso,
+            situaçao: imc
+        }
 
-        // Limpar os campos após adicionar
-        setPeso(0);
-        setAltura(0);
+        setLista([...lista, info]);
     }
-
+    function excluirItem(pos) {
+        lista.splice(pos, 1);
+        setLista([...lista]);
+      }
     return (
         <div className='ex10'>
             <div className='toma10'>
@@ -82,10 +81,12 @@ export default function Exum10() {
                     </div>
                     <div className='list'>
                         {lista.map((item, pos) => (
-                            <div key={pos}>
-                                <div>Altura: {item.altura} m</div>
-                                <div>Peso: {item.peso} kg</div>
-                                <div>IMC: {item.imc}</div>
+                            <div className='lista' key={pos}>
+                                <div>
+                                Altura: {item.altura} | Peso: {item.peso} | IMC: {item.imc}
+                                <i onClick={() =>{excluirItem(pos)}} class="fa-solid fa-trash"></i>
+                                </div>
+                                
                             </div>
                         ))}
                     </div>
